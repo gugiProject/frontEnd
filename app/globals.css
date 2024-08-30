@@ -122,3 +122,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+<<<<<<< HEAD
+=======
+html{
+  width : 100%;
+}
+>>>>>>> e42ea40 (Feat : 공통 레이아웃 구현)
