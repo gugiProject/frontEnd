@@ -3,5 +3,5 @@ export default function MainLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <div className="min-w-[375px] max-w-[600px] mx-auto">{children}</div>;
+  return <div className="min-w-375 max-w-600 mx-auto">{children}</div>;
 }
