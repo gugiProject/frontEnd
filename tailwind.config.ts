@@ -36,6 +36,7 @@ const config: Config = {
 
       colors: {
         lightGray: '#E7E7E7',
+        mediumGray: '#707070',
         gray: '#D9D9D9',
         semiBlack: '#303030',
       },

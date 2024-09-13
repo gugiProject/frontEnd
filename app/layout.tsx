@@ -1,6 +1,9 @@
+import { RecoilRoot } from 'recoil';
+
 import type { Metadata } from 'next';
 import './globals.css';
 import MainLayout from '@/components/MainLayout';
+import RecoilRootWrapper from '@/components/recoil-wrapper';
 
 export const metadata: Metadata = {
   title: {
@@ -25,7 +28,10 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <MainLayout>{children}</MainLayout>
+        <RecoilRootWrapper>{children}</RecoilRootWrapper>
+        {/* <RecoilRoot>
+          <MainLayout>{children}</MainLayout>
+        </RecoilRoot> */}
       </body>
     </html>
   );
