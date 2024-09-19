@@ -2,6 +2,7 @@ import type { Config } from 'tailwindcss';
 
 const px0_10 = {
   ...Array.from(Array(11), (_, i) => `${i}px`),
+  '0.5': '0.5px',
 };
 const px0_100 = {
   ...Array.from(Array(101), (_, i) => `${i}px`),
