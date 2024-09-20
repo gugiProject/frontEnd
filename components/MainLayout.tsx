@@ -9,6 +9,7 @@ export default function MainLayout({
 }) {
   return (
     <RecoilRoot>
+      <div id="modal-root" />
       <div className="min-w-375 max-w-600 mx-auto">{children}</div>
     </RecoilRoot>
   );
