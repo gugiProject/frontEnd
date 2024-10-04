@@ -1,3 +1,4 @@
+import { transform } from 'next/dist/build/swc';
 import type { Config } from 'tailwindcss';
 
 const px0_10 = {
@@ -33,7 +34,6 @@ const config: Config = {
       minWidth: px0_600,
       minHeight: px0_600,
       spacing: px0_600,
-
       colors: {
         lightGray: '#E7E7E7',
         gray: '#D9D9D9',
@@ -41,6 +41,11 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+
+  safelist: [
+    {
+      pattern: /-?translate-x-[-]?[0-9]+(\.[0-9]+)?/,
+    },
+  ],
 };
 export default config;
